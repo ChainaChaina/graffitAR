@@ -4,6 +4,8 @@
   -moz-user-select: none;    /* For Firefox */
   -ms-user-select: none;
     /* For Internet Explorer/Edge */
+    font-family: "Roboto", serif;
+  font-weight: 500;
     
 }
 

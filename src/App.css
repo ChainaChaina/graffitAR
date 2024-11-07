@@ -13,6 +13,7 @@
   display: flex;
   width: 100vw;
   justify-content: space-around;
+  margin-bottom: 75px;
 }
 
 .img-div{
@@ -20,6 +21,15 @@
   color: white;
   width: 50vw;
   position: relative;
+  justify-items: center;
+}
+
+.logo{
+  max-width: 450px;
+}
+
+.tilt{
+  max-width: 450px;
 }
 
 .moldura{
@@ -33,6 +43,7 @@
 img {
   width: 100%;
 }
+
 
 .title-text{
   margin-left: 20px;
@@ -70,3 +81,62 @@ img {
 .scrolldown{
   width: 70px;
 }
+
+.flying-imgs{}
+
+.title{
+  font-family: "Gruppo", sans-serif;
+  font-size: 6rem;
+}
+
+.ar{
+  font-style: italic;
+  color: #003868;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.ar:hover {
+  color: #005bb5;
+}
+
+.sticker{
+  max-width: 200px;
+  z-index: 200;
+}
+
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  margin: auto;
+}
+
+.description{
+  font-size: 2rem;
+  text-align: left;
+}
+
+.img-divs{
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 700px) {
+  .sticker{
+    max-width: 100px;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .sticker{
+    max-width: 70px;
+  }
+  
+}
+
