@@ -2,6 +2,8 @@ import logo from './assets/5.png';
 import moldura from './assets/moldura.png';
 import basnky from './assets/banksy-disarm-cke.webp';
 import wall from './assets/wall.jpg';
+import home from './assets/pichodemais.jpg';
+import nausea from './assets/nausea.webp';
 import tag1 from './assets/smiley.webp';
 import tag2 from './assets/guilty.webp';
 import scrolldown from './assets/scroll.gif';
@@ -32,27 +34,27 @@ function App() {
           start: "top bottom",
           end: "bottom+=100 bottom",
           scrub: true,
-          markers: true,
+         
         },
       });
 
       const stick1 = gsap.timeline({
         scrollTrigger: {
           trigger: ".wall",
-          start: "top bottom",
+          start: "top bottom-=100",
           end: "bottom bottom",
           scrub: true,
-          markers: true,
+         
         },
       });
 
       const stick2 = gsap.timeline({
         scrollTrigger: {
           trigger: ".wall",
-          start: "top bottom",
+          start: "top bottom-=100",
           end: "bottom bottom",
           scrub: true,
-          markers: true,
+         
         },
       });
 
@@ -126,61 +128,75 @@ function App() {
         </p>
       </div>
       <div className="flying-imgs">
-        <section>
-          <img  className="wall" src={wall} alt="" />
-          <div className='img-divs'>
-          <img id='sticky1' className="sticker" src={tag1} alt="" />
-          <img id='sticky2' className="sticker" src={tag2} alt="" />
+        <section className='section-wall'>
+          <img className="wall" src={wall} alt="" />
+          <div className="img-divs">
+            <img id="sticky1" className="sticker" src={tag1} alt="" />
+            <img id="sticky2" className="sticker" src={tag2} alt="" />
           </div>
         </section>
       </div>
 
-      <div className="text-container">
-        <p className="description">
-          {" "}
-          No entanto, há um debate sobre os impactos negativos do grafite em
-          espaços privados e na arquitetura urbana.{" "}
-        </p>
-        <p className="description">
-          {" "}
-          Muitos veem o grafite em residências, prédios históricos ou áreas
-          comerciais como uma forma de "agressão" visual. A crítica se concentra
-          no fato de que nem todos os espaços foram designados para intervenções
-          artísticas e, em alguns casos, o grafite pode danificar a estética
-          arquitetônica ou gerar custos de limpeza.
-        </p>
-        <p className="description">
-          {" "}
-          contraste entre o impacto positivo de dar voz a uma comunidade e as
-          críticas ao dano físico leva à reflexão sobre como equilibrar o
-          direito à expressão com a preservação dos espaços públicos e privados.
-        </p>
-      </div>
+      <div className="holder">
+        <div className="text-container">
+          <p className="description poblem-div">
+            {" "}
+            No entanto, há um debate sobre os impactos negativos do grafite em
+            espaços privados e na arquitetura urbana...{" "}
+          </p>
+          <div className='pich-div'>
+          <img className='nausea' src={nausea} alt="" />
+          <img className='pich' src={home} alt="" />
+          </div>
+          <p className="description">
+            {" "}
+            Muitos veem o grafite em residências, prédios históricos ou áreas
+            comerciais como uma forma de "agressão" visual. A crítica se
+            concentra no fato de que nem todos os espaços foram designados para
+            intervenções artísticas e, em alguns casos, o grafite pode danificar
+            a estética arquitetônica ou gerar custos de limpeza.
+          </p>
+          <p className="description">
+            {" "}
+            contraste entre o impacto positivo de dar voz a uma comunidade e as
+            críticas ao dano físico leva à reflexão sobre como equilibrar o
+            direito à expressão com a preservação dos espaços públicos e
+            privados.
+          </p>
+        </div>
 
-      <div className="text-container">
-        <p className="description">
-          A realidade aumentada pode ser uma alternativa para explorar o
-          grafite. A tecnologia permite que as pessoas vejam e interajam com
-          obras de arte digitalmente projetadas em espaços públicos ou privados.
-          Isso pode ser uma maneira de preservar a arquitetura original de um
-          edifício enquanto ainda permite que os artistas compartilhem suas
-          mensagens e visões com o mundo.
-        </p>
-        <p>video</p>
-        <p>
-          O projeto Grafitt(AR), tem como objetivo criar uma forma alternativa
-          de pessoas sem espaço se expressarem, de maneira diferente e mais
-          segura quanto a cidade. De forma sem agradir a arquitetura e sem
-          cuistos a cidade.{" "}
-        </p>
-        <p> video</p>
+        <div className="text-container">
+          <p className="description">
+            A realidade aumentada pode ser uma alternativa para explorar o
+            grafite. A tecnologia permite que as pessoas vejam e interajam com
+            obras de arte digitalmente projetadas em espaços públicos ou
+            privados. Isso pode ser uma maneira de preservar a arquitetura
+            original de um edifício enquanto ainda permite que os artistas
+            compartilhem suas mensagens e visões com o mundo.
+          </p>
+          <p>video</p>
+          <div className='cyber-div'>
+            <span >
+              (❁´◡`❁)
+            </span>
+            <p className="cyber-text">
+              O projeto Grafitt(AR), tem como objetivo criar uma forma
+              alternativa de pessoas sem espaço se expressarem, de maneira
+              diferente e mais segura quanto a cidade. De forma sem agradir a
+              arquitetura e sem cuistos a cidade.{" "} <br></br>
+              <span> (*/ω＼*)</span>
+              <span> (o゜▽゜)o☆</span>
+            </p>
+          </div>
+          <p> video</p>
 
-        <p>Projetos futuros:</p>
+          <p>Projetos futuros:</p>
 
-        <p>Login e usuários</p>
-        <p>Upload pelos usuários</p>
-        <p>votação para arte da semana</p>
-        <p>modelos 3D</p>
+          <p>Login e usuários</p>
+          <p>Upload pelos usuários</p>
+          <p>votação para arte da semana</p>
+          <p>modelos 3D</p>
+        </div>
       </div>
     </div>
   );
